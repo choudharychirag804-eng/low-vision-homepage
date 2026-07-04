@@ -525,6 +525,97 @@ export default function ProductsPage() {
           ))}
         </div>
 
+        {/* Category Descriptions Banner / Overview Grid */}
+        {selectedCategory && (
+          <div className="bg-white rounded-[2rem] p-8 border border-slate-100 shadow-lg mb-12 flex flex-col md:flex-row gap-8 items-start md:items-center">
+            <div className="flex-1">
+              <span className="text-xs font-extrabold text-accent uppercase tracking-widest">
+                {selectedCategory === "Blindness Products" ? "Tactile & Audio" : selectedCategory === "Low Vision Products" ? "HD Optics" : "Tactile Print"}
+              </span>
+              <h2 className="text-3xl font-black text-slate-900 mt-1 mb-3">
+                {selectedCategory}
+              </h2>
+              <p className="text-sm text-slate-500 leading-relaxed max-w-2xl">
+                {selectedCategory === "Blindness Products" 
+                  ? "Multi-line tactile braille displays, voice recorders, text OCR readers, haptic tools, and physical coding suites."
+                  : selectedCategory === "Low Vision Products"
+                  ? "High-definition portable and desktop video magnifiers with customizable contrast, distance cameras, and text-to-speech."
+                  : "Double-sided braille printers, tractor and sheet-fed embossers, sound-dampening acoustic cabinets, and translation software."}
+              </p>
+            </div>
+            <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100/50 min-w-[280px]">
+              <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Key Offerings</h4>
+              <ul className="space-y-2">
+                {(selectedCategory === "Blindness Products" 
+                  ? ["Braille Note Touch Evolve", "Victor Reader Stream 3", "Mantis Q40 braille display", "Code Jumper"]
+                  : selectedCategory === "Low Vision Products"
+                  ? ["Connect 12 Magnifier", "Explore 12 Foldable stand", "Explore 8 Handheld screen", "Reveal 16 Desktop reader"]
+                  : ["Index Everest-D V5", "Index Basic-D V5", "Braille Label Printer", "Duxbury Translation Software"]
+                ).map((offering, idx) => (
+                  <li key={idx} className="text-xs font-bold text-slate-700 flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+                    {offering}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        )}
+
+        {!selectedCategory && (
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-12">
+            {[
+              {
+                title: "Blindness Products",
+                subtitle: "Tactile & Audio",
+                desc: "Multi-line tactile braille displays, voice recorders, text OCR readers, haptic tools, and physical coding suites.",
+                offerings: ["Braille Note Touch Evolve", "Victor Reader Stream 3", "Mantis Q40 braille display", "Code Jumper"]
+              },
+              {
+                title: "Low Vision Products",
+                subtitle: "HD Optics",
+                desc: "High-definition portable and desktop video magnifiers with customizable contrast, distance cameras, and text-to-speech.",
+                offerings: ["Connect 12 Magnifier", "Explore 12 Foldable stand", "Explore 8 Handheld screen", "Reveal 16 Desktop reader"]
+              },
+              {
+                title: "Index Braille Embosser",
+                subtitle: "Tactile Print",
+                desc: "Double-sided braille printers, tractor and sheet-fed embossers, sound-dampening acoustic cabinets, and translation software.",
+                offerings: ["Index Everest-D V5", "Index Basic-D V5", "Braille Label Printer", "Duxbury Translation Software"]
+              }
+            ].map((details) => (
+              <div
+                key={details.title}
+                onClick={() => setSelectedCategory(details.title)}
+                className="bg-white rounded-[2rem] p-6 border border-slate-100 hover:border-primary/20 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer flex flex-col justify-between"
+              >
+                <div>
+                  <span className="text-[10px] font-extrabold text-accent uppercase tracking-widest">
+                    {details.subtitle}
+                  </span>
+                  <h3 className="text-xl font-black text-slate-900 mt-1 mb-3 hover:text-primary transition-colors">
+                    {details.title}
+                  </h3>
+                  <p className="text-xs text-slate-500 leading-relaxed mb-6">
+                    {details.desc}
+                  </p>
+                </div>
+                <div className="bg-slate-50 p-4 rounded-xl border border-slate-100/50 mt-4">
+                  <h4 className="text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-2">Key Offerings</h4>
+                  <ul className="space-y-1.5">
+                    {details.offerings.map((offering, idx) => (
+                      <li key={idx} className="text-[11px] font-semibold text-slate-600 flex items-center gap-1.5">
+                        <span className="w-1 h-1 rounded-full bg-primary" />
+                        {offering}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+
         {/* Products Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 min-h-[500px] mb-20">
           <AnimatePresence mode="popLayout">
