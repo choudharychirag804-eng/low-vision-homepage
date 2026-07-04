@@ -69,7 +69,7 @@ html {
 }
 
 .theme-light-blue img[alt="Shop 4 Special Logo"] {
-  filter: hue-rotate(220deg) brightness(0.65) saturate(1.8) !important;
+  filter: brightness(0) saturate(100%) invert(14%) sepia(61%) saturate(5451%) hue-rotate(223deg) brightness(92%) contrast(102%) !important;
 }
 
 .theme-light-blue .bg-white {
