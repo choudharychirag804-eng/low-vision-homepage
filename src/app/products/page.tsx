@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Eye, BookOpen, Printer, Star, ArrowUpRight, CheckCircle2, Volume2, Glasses, Cpu, Radio, Tablet } from "lucide-react";
+import EnquiryModal from "@/components/EnquiryModal";
 
 interface Product {
   id: number;
@@ -481,6 +482,7 @@ const products: Product[] = [
 
 export default function ProductsPage() {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const [activeEnquiryProduct, setActiveEnquiryProduct] = useState<string | null>(null);
 
   const filtered = selectedCategory
     ? products.filter((p) => p.category === selectedCategory)
@@ -576,19 +578,13 @@ export default function ProductsPage() {
                     <p className="text-xs text-slate-400 font-semibold">Price</p>
                     <p className="text-xl font-black text-slate-900">{product.price}</p>
                   </div>
-                  <Link
-                    href={`/contact?category=${
-                      product.category === "Blindness Products"
-                        ? "blindness"
-                        : product.category === "Low Vision Products"
-                        ? "lowvision"
-                        : "embosser"
-                    }&product=${encodeURIComponent(product.name)}`}
+                  <button
+                    onClick={() => setActiveEnquiryProduct(product.name)}
                     className="px-6 py-3 rounded-xl bg-slate-900 hover:bg-primary text-white text-sm font-bold flex items-center gap-2 transition-colors shadow-md cursor-pointer"
                   >
                     Book Demo
                     <ArrowUpRight className="w-4 h-4" />
-                  </Link>
+                  </button>
                 </div>
               </motion.div>
             ))}
@@ -597,6 +593,12 @@ export default function ProductsPage() {
       </section>
 
       <Footer />
+      {activeEnquiryProduct && (
+        <EnquiryModal
+          productName={activeEnquiryProduct}
+          onClose={() => setActiveEnquiryProduct(null)}
+        />
+      )}
     </div>
   );
 }
