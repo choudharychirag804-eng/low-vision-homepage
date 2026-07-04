@@ -63,6 +63,15 @@ html {
   color: #1e3a8a !important;
 }
 
+/* Theme-adaptive Logo Colors */
+.theme-dark img[alt="Shop 4 Special Logo"] {
+  filter: brightness(0) invert(1) !important;
+}
+
+.theme-light-blue img[alt="Shop 4 Special Logo"] {
+  filter: hue-rotate(220deg) brightness(0.65) saturate(1.8) !important;
+}
+
 .theme-light-blue .bg-white,
 .theme-light-blue .bg-slate-50,
 .theme-light-blue .bg-slate-100 {
