@@ -39,11 +39,11 @@ export default function Footer() {
         <div className="lg:col-span-2 flex flex-col gap-4">
           <h5 className="text-xs font-bold uppercase tracking-widest text-white">Resources</h5>
           <div className="flex flex-col gap-2.5 text-sm">
-            <Link href="/services" className="hover:text-white transition-colors">Knowledge Hub</Link>
+            <Link href="/discover" className="hover:text-white transition-colors">Discover Hub</Link>
+            <Link href="/news" className="hover:text-white transition-colors">News & Articles</Link>
             <Link href="/services" className="hover:text-white transition-colors">User Manuals</Link>
             <Link href="/services" className="hover:text-white transition-colors">Help Center</Link>
             <Link href="/services" className="hover:text-white transition-colors">Special Education</Link>
-            <Link href="/services" className="hover:text-white transition-colors">Clinical Studies</Link>
           </div>
         </div>
 

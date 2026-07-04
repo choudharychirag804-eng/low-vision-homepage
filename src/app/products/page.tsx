@@ -137,6 +137,65 @@ const products: Product[] = [
     icon: <Cpu className="w-12 h-12 text-primary" />,
     specs: ["Physical Tactile Pods", "Coding Concepts Learning", "Screen-reader Free", "Ages 7+ Designed"]
   },
+  // Merged Blindness Products from shop4specials
+  {
+    id: 101,
+    name: "JAWS & NVDA Screen Reader Bundle",
+    category: "Blindness Products",
+    description: "Fully optimized software licenses for the two leading screen readers, enabling complete keyboard-driven navigation on Windows systems.",
+    price: "Contact Us",
+    rating: 4.9,
+    reviews: 215,
+    badge: "Essential",
+    icon: <Cpu className="w-12 h-12 text-primary" />,
+    specs: ["Multi-lingual support", "Direct Braille display integration", "Advanced OCR for image text reading"]
+  },
+  {
+    id: 102,
+    name: "Talking Scientific Calculator",
+    category: "Blindness Products",
+    description: "High-contrast large screen calculator that speaks calculations and mathematical functions aloud in clear English audio.",
+    price: "Contact Us",
+    rating: 4.8,
+    reviews: 95,
+    icon: <Radio className="w-12 h-12 text-primary" />,
+    specs: ["Tactile keys with raised dividers", "Voice volume and speed adjustments", "Earphone jack for quiet environments"]
+  },
+  {
+    id: 103,
+    name: "Orion Haptic Smart Cane",
+    category: "Blindness Products",
+    description: "Ultrasonic sensor cane that vibrates to notify navigators of hanging obstacles, low branches, or steps ahead.",
+    price: "Contact Us",
+    rating: 4.9,
+    reviews: 167,
+    badge: "Safety Choice",
+    icon: <Radio className="w-12 h-12 text-primary" />,
+    specs: ["3 haptic vibration patterns", "Rechargeable battery (8 hours)", "Adjustable range settings (1-3 meters)"]
+  },
+  {
+    id: 104,
+    name: "Daisy Multimedia Audio Reader",
+    category: "Blindness Products",
+    description: "Handheld digital player specifically designed to play Daisy books, textbooks, MP3s, and digital audio tutorials.",
+    price: "Contact Us",
+    rating: 4.7,
+    reviews: 84,
+    icon: <Volume2 className="w-12 h-12 text-primary" />,
+    specs: ["Tactile number pad layout", "Text files auto read-aloud support", "Includes preloaded SD card slot"]
+  },
+  {
+    id: 105,
+    name: "Braille Buzz Tactile Alphabet Trainer",
+    category: "Blindness Products",
+    description: "A fun educational toy with tactile keys that speak the corresponding letter and word to teach early Braille skills.",
+    price: "Contact Us",
+    rating: 4.9,
+    reviews: 58,
+    badge: "Early Learning",
+    icon: <BookOpen className="w-12 h-12 text-primary" />,
+    specs: ["Bright contrasting keys", "Sturdy lightweight design", "Includes parent audio instructions"]
+  },
 
   // ── LOW VISION PRODUCTS ─────────────────────────────────────────────
   {
@@ -208,6 +267,64 @@ const products: Product[] = [
     badge: "Advanced",
     icon: <Eye className="w-12 h-12 text-indigo-600" />,
     specs: ["16-inch + Distance Camera", "Integrated Camera System", "High-contrast Modes", "Remote Control Included"]
+  },
+  // Merged Low Vision Products from shop4specials
+  {
+    id: 201,
+    name: "Illuminated LED Handheld Magnifier",
+    category: "Low Vision Products",
+    description: "Premium glass lens magnifier offering 5x magnification and high-power surrounding LEDs for read-assist in dark spaces.",
+    price: "Contact Us",
+    rating: 4.8,
+    reviews: 120,
+    icon: <Glasses className="w-12 h-12 text-indigo-600" />,
+    specs: ["Aspheric distortion-free lens", "Ergonomic light-weight handle", "Bright white glare-free light"]
+  },
+  {
+    id: 202,
+    name: "Clover 6 HD Portable Video Magnifier",
+    category: "Low Vision Products",
+    description: "6-inch high-definition digital screen that magnifies books, labels, and mail up to 30x with custom color contrast lines.",
+    price: "Contact Us",
+    rating: 4.9,
+    reviews: 135,
+    badge: "Top Rated",
+    icon: <Eye className="w-12 h-12 text-indigo-600" />,
+    specs: ["Contrast: Yellow-on-black, Black-on-white", "Integrated folding reading stand", "Save image snapshot capability"]
+  },
+  {
+    id: 203,
+    name: "Line-Guide Reading Board",
+    category: "Low Vision Products",
+    description: "A clear acrylic sheet with a prominent high-contrast yellow tracking bar, helping users follow text lines without skipping.",
+    price: "Contact Us",
+    rating: 4.7,
+    reviews: 62,
+    icon: <Glasses className="w-12 h-12 text-indigo-600" />,
+    specs: ["Ideal for reading books & print letters", "Glare reduction material", "Flexible layout alignments"]
+  },
+  {
+    id: 204,
+    name: "High-Contrast Large-Print Keyboard",
+    category: "Low Vision Products",
+    description: "Standard desktop computer keyboard featuring oversized letters printed in deep black text on bright yellow keys.",
+    price: "Contact Us",
+    rating: 4.8,
+    reviews: 144,
+    icon: <Glasses className="w-12 h-12 text-indigo-600" />,
+    specs: ["Large print legends (4x larger)", "Soft-tactile key responses", "Standard USB plug-and-play setup"]
+  },
+  {
+    id: 205,
+    name: "IrisVision Smart Electronic Glasses",
+    category: "Low Vision Products",
+    description: "Wearable virtual-reality style visor glasses utilizing a powerful HD camera to magnify your sight field up to 70x in real-time.",
+    price: "Contact Us",
+    rating: 4.9,
+    reviews: 110,
+    badge: "Smart Visor",
+    icon: <Eye className="w-12 h-12 text-indigo-600" />,
+    specs: ["Adjustable contrast & bubble zoom", "Lightweight comfortable strap", "Helps users read signs and watch TV"]
   },
 
   // ── INDEX BRAILLE EMBOSSER ──────────────────────────────────────────
@@ -335,6 +452,30 @@ const products: Product[] = [
     reviews: 39,
     icon: <Printer className="w-12 h-12 text-accent" />,
     specs: ["100gsm Heavy Weight", "Continuous Roll Format", "Tractor-feed Compatible", "Bulk Supply Available"]
+  },
+  // Merged Embosser/Paper Products from shop4specials
+  {
+    id: 301,
+    name: "Heavyweight 100lb Braille Sheet Pack",
+    category: "Index Braille Embosser",
+    description: "Unpunched heavy cardstock paper optimized for holding sharp embossed dots without collapsing or tearing.",
+    price: "Contact Us",
+    rating: 4.8,
+    reviews: 76,
+    badge: "High Quality",
+    icon: <Printer className="w-12 h-12 text-accent" />,
+    specs: ["Pack of 250 sheets", "Standard 11 x 11.5 inch sizes", "Acid-free long-lasting durability"]
+  },
+  {
+    id: 302,
+    name: "Tactile Graphing Braille Notebook",
+    category: "Index Braille Embosser",
+    description: "Spiral-bound notebook containing alternating blank and raised grid-lined graph papers for math and writing.",
+    price: "Contact Us",
+    rating: 4.9,
+    reviews: 64,
+    icon: <BookOpen className="w-12 h-12 text-accent" />,
+    specs: ["Tactile grid coordinates", "Tear-resistant binder rings", "Includes heavy index card covers"]
   }
 ];
 
