@@ -221,16 +221,6 @@ const products: Product[] = [
     reviews: 72,
     badge: "Premium Choice",
     icon: <Printer className="w-12 h-12 text-accent" />
-  },
-  {
-    id: 8,
-    name: "Braille Label Printer",
-    category: "Index Braille Embosser",
-    description: "Handheld tactile labeler for writing custom braille stickers to label home and office items.",
-    price: "$149",
-    rating: 4.6,
-    reviews: 49,
-    icon: <Printer className="w-12 h-12 text-accent" />
   }
 ];
 

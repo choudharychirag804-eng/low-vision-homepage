@@ -52,17 +52,15 @@ export default function Header() {
       >
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group" aria-label="Shop 4 Special Home">
-            <div className="relative w-36 h-10 group-hover:scale-105 transition-transform flex items-center justify-start">
-              <Image
-                src="/logo-nav-small.png"
-                alt="Shop 4 Special Logo"
-                fill
-                sizes="144px"
-                className="object-contain object-left"
-                priority
-              />
-            </div>
+          <Link href="/" className="flex items-center gap-3 group" aria-label="Shop 4 Special Home">
+            <img
+              src="/logo-new-1.png"
+              alt="Shop 4 Special Logo Icon"
+              className="h-10 w-auto object-contain group-hover:scale-105 transition-transform duration-300"
+            />
+            <span className="text-xl font-black tracking-tight text-slate-900 dark:text-white logo-text transition-colors duration-300">
+              Shop 4 Special
+            </span>
           </Link>
 
           {/* Desktop Nav */}

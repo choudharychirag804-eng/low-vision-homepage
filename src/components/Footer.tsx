@@ -9,16 +9,15 @@ export default function Footer() {
     <footer className="bg-slate-900 text-slate-400 py-16 border-t border-slate-800">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8">
         <div className="lg:col-span-4 flex flex-col gap-4">
-          <Link href="/" className="flex items-center gap-2 group w-fit" aria-label="Shop 4 Special Home">
-            <div className="relative w-36 h-10 flex items-center justify-start">
-              <Image
-                src="/logo-nav-small.png"
-                alt="Shop 4 Special Logo"
-                fill
-                sizes="144px"
-                className="object-contain object-left"
-              />
-            </div>
+          <Link href="/" className="flex items-center gap-3 group w-fit" aria-label="Shop 4 Special Home">
+            <img
+              src="/logo-new-1.png"
+              alt="Shop 4 Special Logo Icon"
+              className="h-10 w-auto object-contain"
+            />
+            <span className="text-xl font-black tracking-tight text-white transition-colors duration-300">
+              Shop 4 Special
+            </span>
           </Link>
           <p className="text-sm leading-relaxed text-slate-400 max-w-sm mt-2">
             Shop 4 Special is a global assistive technology innovator dedicated to making everyday life accessible. We design and deliver medical-grade smart systems, readers, and canes.

@@ -63,13 +63,21 @@ html {
   color: #1e3a8a !important;
 }
 
-/* Theme-adaptive Logo Colors */
-.theme-dark img[alt="Shop 4 Special Logo"] {
+/* Theme-adaptive Logo Colors & Typography */
+.logo-text {
+  color: var(--foreground) !important;
+}
+
+.theme-dark img[alt="Shop 4 Special Logo Icon"] {
   filter: brightness(0) invert(1) !important;
 }
 
-.theme-light-blue img[alt="Shop 4 Special Logo"] {
+.theme-light-blue img[alt="Shop 4 Special Logo Icon"] {
   filter: brightness(0) saturate(100%) invert(14%) sepia(61%) saturate(5451%) hue-rotate(223deg) brightness(92%) contrast(102%) !important;
+}
+
+.theme-light-blue .logo-text {
+  color: #1e3a8a !important;
 }
 
 .theme-light-blue .bg-white {
