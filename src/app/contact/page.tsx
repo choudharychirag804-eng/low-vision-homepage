@@ -116,7 +116,7 @@ export default function ContactPage() {
           <div className="lg:col-span-7">
             <div className="glass-panel p-8 md:p-10 rounded-[2rem] shadow-xl border border-white/80">
               <h4 className="text-xl font-bold font-display text-slate-900 mb-6">
-                Request Free Virtual Demo
+                Virtual Demo & Enquiry
               </h4>
               <form onSubmit={handleFormSubmit} className="space-y-4">
                 {formErrors && (
@@ -214,12 +214,12 @@ export default function ContactPage() {
                   {isScheduling ? (
                     <>
                       <div className="w-5 h-5 rounded-full border-2 border-white border-t-transparent animate-spin" />
-                      Scheduling Consultation...
+                      Sending Enquiry...
                     </>
                   ) : (
                     <>
                       <Calendar className="w-4 h-4" />
-                      Schedule Free Virtual Consultation
+                      Send Virtual Demo & Enquiry
                       <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
                     </>
                   )}
@@ -250,15 +250,15 @@ export default function ContactPage() {
                 </div>
                 
                 <h4 className="text-2xl font-bold font-display text-slate-950">
-                  Consultation Confirmed!
+                  Enquiry Confirmed!
                 </h4>
                 
                 <p className="text-sm text-slate-500 leading-relaxed">
-                  Hi <span className="font-bold text-slate-800">{formData.firstName}</span>, your virtual consultation has been scheduled successfully. We've sent a link and details to <span className="font-bold text-slate-800">{formData.email}</span>.
+                  Hi <span className="font-bold text-slate-800">{formData.firstName}</span>, your virtual demo request and enquiry has been sent successfully. We've sent a confirmation to <span className="font-bold text-slate-800">{formData.email}</span>.
                 </p>
 
                 <div className="w-full bg-slate-50 rounded-2xl p-4 border border-slate-100/50 flex flex-col gap-2 text-left text-xs text-slate-600 font-medium">
-                  <p><span className="text-slate-400">Date/Time:</span> Will confirm via email shortly</p>
+                  <p><span className="text-slate-400">Status:</span> Sent to admin@shop4specials.com</p>
                   <p><span className="text-slate-400">Contact Phone:</span> {formData.phone}</p>
                   {formData.category && <p><span className="text-slate-400">Device Category:</span> {formData.category}</p>}
                 </div>
