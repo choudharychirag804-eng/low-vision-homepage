@@ -54,12 +54,12 @@ html {
 
 /* Light Blue Theme Styles */
 .theme-light-blue {
-  --background: #f0f8ff;
+  --background: #f4f8fd;
   --foreground: #1e3a8a;
 }
 
 .theme-light-blue body {
-  background-color: #f0f8ff !important;
+  background-color: #f4f8fd !important;
   color: #1e3a8a !important;
 }
 
@@ -72,10 +72,13 @@ html {
   filter: hue-rotate(220deg) brightness(0.65) saturate(1.8) !important;
 }
 
-.theme-light-blue .bg-white,
+.theme-light-blue .bg-white {
+  background-color: #ffffff !important;
+}
+
 .theme-light-blue .bg-slate-50,
 .theme-light-blue .bg-slate-100 {
-  background-color: #e6f0fa !important;
+  background-color: #f0f6fc !important;
 }
 
 .theme-light-blue .text-slate-950,
