@@ -52,31 +52,52 @@ html {
   --foreground: #f8fafc;
 }
 
-/* High Contrast Styles */
-.theme-high-contrast {
-  --background: #000000;
-  --foreground: #ffff00;
+/* Light Blue Theme Styles */
+.theme-light-blue {
+  --background: #f0f8ff;
+  --foreground: #1e3a8a;
 }
 
-.theme-high-contrast * {
-  background-color: #000000 !important;
-  color: #ffff00 !important;
-  border-color: #ffff00 !important;
-  background-image: none !important;
-  box-shadow: none !important;
-  text-shadow: none !important;
+.theme-light-blue body {
+  background-color: #f0f8ff !important;
+  color: #1e3a8a !important;
 }
 
-.theme-high-contrast a,
-.theme-high-contrast button {
-  border: 2px solid #ffff00 !important;
-  outline: 2px solid #000000 !important;
+.theme-light-blue .bg-white,
+.theme-light-blue .bg-slate-50,
+.theme-light-blue .bg-slate-100 {
+  background-color: #e6f0fa !important;
 }
 
-.theme-high-contrast a:hover,
-.theme-high-contrast button:hover {
-  background-color: #ffff00 !important;
-  color: #000000 !important;
+.theme-light-blue .text-slate-950,
+.theme-light-blue .text-slate-900,
+.theme-light-blue .text-slate-800,
+.theme-light-blue .text-slate-700,
+.theme-light-blue .text-slate-600,
+.theme-light-blue .text-slate-500 {
+  color: #1e3a8a !important;
+}
+
+.theme-light-blue .border-slate-100,
+.theme-light-blue .border-slate-200,
+.theme-light-blue .border-slate-300 {
+  border-color: #bfdbfe !important;
+}
+
+.theme-light-blue .glass-panel {
+  background: rgba(230, 240, 250, 0.8) !important;
+  border-color: #bfdbfe !important;
+}
+
+.theme-light-blue button,
+.theme-light-blue a {
+  border-color: #1e3a8a !important;
+}
+
+.theme-light-blue button:hover,
+.theme-light-blue a:hover {
+  background-color: #1e3a8a !important;
+  color: #f0f8ff !important;
 }
 
 body {

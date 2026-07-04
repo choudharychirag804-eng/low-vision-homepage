@@ -132,15 +132,15 @@ export default function AccessibilityMenu({ isOpen, onClose }: AccessibilityMenu
               Dark Mode
             </button>
             <button
-              onClick={() => setTheme("high-contrast")}
+              onClick={() => setTheme("light-blue")}
               className={`w-full text-left px-5 py-3.5 rounded-xl border text-sm font-semibold transition-all cursor-pointer ${
-                theme === "high-contrast"
-                  ? "bg-black text-[#ffff00] border-[#ffff00] font-bold border-2"
-                  : "bg-black text-white border-slate-800 hover:bg-slate-900"
+                theme === "light-blue"
+                  ? "bg-blue-100 text-blue-900 border-blue-600 font-bold border-2"
+                  : "bg-blue-50/50 text-blue-800 border-slate-200 dark:border-slate-700 hover:bg-blue-100"
               }`}
-              aria-pressed={theme === "high-contrast"}
+              aria-pressed={theme === "light-blue"}
             >
-              High Contrast (Black & Yellow)
+              Light Blue Theme
             </button>
           </div>
         </section>

@@ -78,12 +78,12 @@ export const AccessibilityProvider: React.FC<{ children: React.ReactNode }> = ({
     localStorage.setItem("s4s-theme", theme);
     const body = document.body;
 
-    body.classList.remove("theme-dark", "theme-high-contrast");
+    body.classList.remove("theme-dark", "theme-light-blue");
 
     if (theme === "dark") {
       body.classList.add("theme-dark");
-    } else if (theme === "high-contrast") {
-      body.classList.add("theme-high-contrast");
+    } else if (theme === "light-blue") {
+      body.classList.add("theme-light-blue");
     }
   }, [theme]);
 
